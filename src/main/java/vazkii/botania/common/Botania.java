@@ -155,6 +155,7 @@ public class Botania {
 		NetworkRegistry.INSTANCE.registerGuiHandler(Botania.instance, new GuiHandler());
 
 		MinecraftForge.TERRAIN_GEN_BUS.register(BiomeDecorationHandler.class);
+		MinecraftForge.EVENT_BUS.register(BiomeDecorationHandler.class); //TODO: porktodo: remove this
 		MinecraftForge.EVENT_BUS.register(ManaNetworkHandler.instance);
 		MinecraftForge.EVENT_BUS.register(TileCorporeaIndex.getInputHandler());
 		MinecraftForge.EVENT_BUS.register(new LootHandler());
